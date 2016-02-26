@@ -13,13 +13,15 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "circularregular", "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
 }
 
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    color: #fff;
 }
 
 .text-vertical-center h1 {
@@ -27,6 +29,17 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+}
+
+@font-face {
+    font-family: 'circularregular';
+    src: url('../fonts/Circular-webfont.eot');
+    src: url('../fonts/Circular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Circular-webfont.woff2') format('woff2'),
+         url('../fonts/Circular-webfont.woff') format('woff'),
+         url('../fonts/Circular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Custom Button Styles */
@@ -176,6 +189,35 @@ hr.small {
 
 .service-item {
     margin-bottom: 30px;
+}
+
+.service-image {
+    background-repeat: no-repeat;
+    background-size: 76px;
+    background-position: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.service-image-forklift { background-image: url(../img/forklift.svg); }
+.service-image-forklift-stack { background-image: url(../img/forklift-stack.svg); }
+.service-image-gear { background-image: url(../img/gear.svg); }
+.service-image-tire { background-image: url(../img/tire.svg); }
+.service-image-truck { background-image: url(../img/truck.svg); background-size: 50px; }
+.service-image-truck2 { background-image: url(../img/truck2.svg); }
+.service-image-wrench { background-image: url(../img/wrench.svg); }
+.service-image-move { background-image: url(../img/move.svg); background-size: 55px; }
+
+@media (min-width: 992px) {
+  .service-toggle-btn { display: none; }
+  .portfolio-toggle-btn { display: none; }
+}
+@media (max-width: 991px) {
+  .service-toggle-div { display: none; }
+  .portfolio-toggle-div { display: none; }
 }
 
 /* Callout */
