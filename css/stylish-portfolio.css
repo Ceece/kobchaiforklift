@@ -6,6 +6,8 @@
 
 /* Global Styles */
 
+@import url(https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin);
+
 html,
 body {
     width: 100%;
@@ -13,8 +15,7 @@ body {
 }
 
 body {
-    font-family: "circularregular", "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 18px;
+    font-family: Kanit, "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-vertical-center {
@@ -29,17 +30,6 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
-}
-
-@font-face {
-    font-family: 'circularregular';
-    src: url('../fonts/Circular-webfont.eot');
-    src: url('../fonts/Circular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Circular-webfont.woff2') format('woff2'),
-         url('../fonts/Circular-webfont.woff') format('woff'),
-         url('../fonts/Circular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* Custom Button Styles */
